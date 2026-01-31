@@ -2,37 +2,17 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public float moveSpeed = 2f;
-    Rigidbody2D rb;
-    Transform target;
-    Vector2 moveDirection;
-
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    private Transform target;
+    public float speed;
 
     void Start()
     {
-        target = GameObject.Find("Player").transform;
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (target)
-        {
-            Vector3 direction = (target.position - transform.position).normalized;
-            moveDirection = direction;
-
-        }
-
-    }
-    private void FixedUpdate()
-    {
-        if (target)
-        {
-            rb.linearVelocity = new Vector2(moveDirection.x, moveDirection.y) * moveSpeed;
-        }
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
 }

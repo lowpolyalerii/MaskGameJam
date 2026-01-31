@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: fede49f88cde7104a9f277270302337c
+guid: 03ab50e30a795fe4d83b7034454f5bb8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7983848722320273792
-    second: Untitled209_20260131180753_0
+      213: -2182124076254010665
+    second: rock_0
+  - first:
+      213: 2115267796186251350
+    second: rock_1
+  - first:
+      213: -6546699357316064334
+    second: rock_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled209_20260131180753_0
+      name: rock_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2160
-        height: 2700
+        x: 152
+        y: 1137
+        width: 1761
+        height: 1213
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0813b5adc145cce60800000000000000
-      internalID: 7983848722320273792
+      spriteID: 7d26d0bc6b987b1e0800000000000000
+      internalID: -2182124076254010665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_1
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1764
+        width: 323
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650418c7ad0fa5d10800000000000000
+      internalID: 2115267796186251350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_2
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1265
+        width: 584
+        height: 509
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbd5e3de937525a0800000000000000
+      internalID: -6546699357316064334
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 04b933d3aa841a3408bcad115e970d56
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled209_20260131180753_0: 7983848722320273792
+      rock_0: -2182124076254010665
+      rock_1: 2115267796186251350
+      rock_2: -6546699357316064334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
