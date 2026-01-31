@@ -10,9 +10,8 @@ public class BodyFollow : MonoBehaviour
     public Transform targetDir;
     public float targetDist;
     public float smoothSpeed;
+    public float trailSpeed;
     
-
-    // Update is called once per frame
     private void Start()
     {
         lineRend.positionCount = length;
@@ -24,7 +23,7 @@ public class BodyFollow : MonoBehaviour
     {
         segmentPoses[0] = targetDir.position;
 
-        for (int i = 0; i < segmentPoses.Length; i++)
+        for (int i = 1; i < segmentPoses.Length; i++)
         {
             segmentPoses[i] = Vector3.SmoothDamp(segmentPoses[i], segmentPoses[i - 1] + targetDir.right * targetDist, ref segmentV[i], smoothSpeed);
         }
